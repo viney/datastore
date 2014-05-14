@@ -11,7 +11,7 @@ import (
 func Open() (*sql.DB, error) {
 	os.Setenv("NLS_LANG", "AMERICAN_AMERICA.AL32UTF8")
 	// open
-	db, err := sql.Open("goracle", "viney/admin@sqtcall")
+	db, err := sql.Open("goracle", "viney/admin@test")
 	if err != nil {
 		return nil, err
 	}
